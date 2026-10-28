@@ -9,5 +9,5 @@ for (const match of html.matchAll(/(?:src|href)="(assets\/[^"#]+|styles\.css|app
 const dist = path.join(root, 'dist');
 await rm(dist, { recursive: true, force: true });
 await mkdir(dist, { recursive: true });
-for (const name of ['index.html', 'styles.css', 'app.js', 'assets', '.nojekyll']) await cp(path.join(root, name), path.join(dist, name), { recursive: true });
+for (const name of ['index.html', 'styles.css', 'app.js', 'assets', '.nojekyll', 'favicon.ico', 'apple-touch-icon.png']) await cp(path.join(root, name), path.join(dist, name), { recursive: true });
 console.log('Build complete: dist/ (static hosting, no runtime dependencies)');
