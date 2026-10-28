@@ -120,6 +120,8 @@ section[id],div[id]{scroll-margin-top:24px}
 .case-toolbar>span{font-size:10px;letter-spacing:.13em}
 .close-dialog{display:flex;align-items:center;justify-content:center;min-height:44px;width:44px;flex-shrink:0;padding:0;font-size:13px}
 .close-dialog>span{font-size:28px;font-weight:300}
+.close-dialog:focus-visible{outline:none}
+.close-dialog:focus-visible>span{color:var(--muted)}
 .case-content{padding:40px}
 .case-eyebrow{font-size:11px;color:var(--muted);letter-spacing:.12em}
 .case-content h2{font-family:var(--display);font-size:56px;letter-spacing:-.055em;margin-top:16px}
