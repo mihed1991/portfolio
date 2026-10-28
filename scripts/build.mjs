@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const html = await readFile(path.join(root, 'index.html'), 'utf8');
-for (const match of html.matchAll(/(?:src|href)="(assets\/[^"#]+|styles\.css|app\.js)"/g)) {
+for (const match of html.matchAll(/(?:src|href)="((?:assets\/[^"#]+|styles\.css|app\.js)(?:\?[^"#]*)?)"/g)) {
   await readFile(path.join(root, match[1].split('?')[0]));
 }
 const dist = path.join(root, 'dist');
