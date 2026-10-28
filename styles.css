@@ -220,7 +220,7 @@ section[id],div[id]{scroll-margin-top:24px}
 .steps p{font-size:14px}
 .contact{padding:24px var(--content-inset);margin-top:16px}
 .contact-top>.eyebrow{font-size:9px}
-.contact-top>span{font-size:8px;max-width:90px;text-align:right}
+.contact-top>span{display:none}
 .contact h2{font-size:48px;margin:40px 0 32px}
 .contact-bottom{flex-direction:column;align-items:stretch;gap:24px}
 .contact-link{font-size:14px;justify-content:space-between;gap:16px}
